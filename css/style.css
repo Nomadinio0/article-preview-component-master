@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+}
+body .container {
+  margin: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+}
+body .container .thumbnail {
+  height: 220px;
+  overflow: hidden;
+}
+body .container .thumbnail img {
+  width: 100%;
+}
+body .container .content {
+  padding: 40px 30px;
+}
+body .container .content__title {
+  padding-bottom: 15px;
+  color: hsl(217, 19%, 35%);
+}
+body .container .content__text {
+  color: hsl(214, 17%, 51%);
+}
+body .container .author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 70px;
+}
+body .container .author-avatar {
+  height: 60%;
+  border-radius: 50%;
+}
+body .container .author-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  width: 60%;
+  float: left;
+}
+body .container .author-text p {
+  flex-wrap: wrap;
+  letter-spacing: 0.5px;
+}
+body .container .author-text .name {
+  font-weight: bold;
+  color: hsl(217, 19%, 35%);
+}
+body .container .author-text .date {
+  color: hsl(212, 23%, 69%);
+}
+body .container .author-share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 17px;
+  background-color: hsl(210, 46%, 95%);
+}
+body .container .author-share svg {
+  width: 40%;
+  height: 40%;
+}
+body .container .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 70px;
+  background-color: hsl(217, 19%, 35%);
+}
+body .container .social p {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: hsl(212, 23%, 69%);
+}
+body .container .social-links {
+  display: flex;
+  width: 50%;
+}
+body .container .social-links a {
+  display: flex;
+  margin-right: 15px;
+}
+body .container .social-share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 17px;
+  background-color: hsl(214, 17%, 51%);
+}
+body .container .social-share svg {
+  width: 40%;
+  height: 40%;
+}/*# sourceMappingURL=style.css.map */

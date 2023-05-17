@@ -1,0 +1,142 @@
+@import 'colors';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+
+	a {
+		color: hsl(228, 45%, 44%);
+	}
+}
+
+body {
+	font-family: 'Manrope', sans-serif;
+	font-size: 13px;
+	background-color: $lightGrayishBlue;
+
+	.container {
+		margin: 25px;
+		border-radius: 10px;
+		overflow: hidden;
+		background: white;
+
+		.thumbnail {
+			height: 220px;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.content {
+			padding: 40px 30px;
+
+			&__title {
+				padding-bottom: 15px;
+				color: $veryDarkBlue;
+			}
+
+			&__text {
+				color: $desaturatedDarkBlue;
+			}
+		}
+
+		.author {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 30px;
+			height: 70px;
+
+			&-avatar {
+				height: 60%;
+				border-radius: 50%;
+			}
+
+			&-text {
+				display: flex;
+				flex-direction: column;
+				row-gap: 3px;
+				width: 60%;
+				float: left;
+
+				p {
+					flex-wrap: wrap;
+					letter-spacing: 0.5px;
+				}
+
+				.name {
+					font-weight: bold;
+					color: $veryDarkBlue;
+				}
+
+				.date {
+					color: $grayishBlue;
+				}
+			}
+
+			&-share {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 35px;
+				width: 35px;
+				border-radius: 17px;
+				background-color: $lightGrayishBlue;
+
+				svg {
+					width: 40%;
+					height: 40%;
+				}
+			}
+		}
+
+		.social {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 30px;
+			height: 70px;
+			background-color: $veryDarkBlue;
+			// display: none;
+
+			p {
+				letter-spacing: 5px;
+				text-transform: uppercase;
+				color: $grayishBlue;
+			}
+
+			&-links {
+				display: flex;
+				width: 50%;
+
+				a {
+					display: flex;
+					margin-right: 15px;
+				}
+			}
+
+			&-share {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 35px;
+				width: 35px;
+				border-radius: 17px;
+				background-color: $desaturatedDarkBlue;
+
+				svg {
+					width: 40%;
+					height: 40%;
+				}
+			}
+		}
+	}
+}
